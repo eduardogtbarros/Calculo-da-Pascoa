@@ -1,5 +1,22 @@
+/*-----------------------------------------------------------------*/
+/**
+  @file   calculaPascoa.c
+  @author Eduardo Barros
+  @brief  Implementa o cálculo do dia da Páscoa utilizando o algoritmo
+          de J. M. Oudin.
+ */
+/*-----------------------------------------------------------------*/
+
 #include <stdio.h>
-void calculaPascoa(int a){
+
+/*-----------------------------------------------------------------*/
+/**
+   @brief Função responsável por fazer o cálculo do dia da Páscoa.
+   @param  int a ano para o qual se deseja saber o dia da Páscoa.
+   @return O dia calculado da Páscoa.
+*/
+/*-----------------------------------------------------------------*/
+int calculaPascoa(int a){
     int c, n, k, i, j, l, m, d;
 
     c = a/100;
@@ -17,19 +34,22 @@ void calculaPascoa(int a){
     m = 3 + ((l+40)/44);
     d = l + 28 - (31*(m/4));
 
-    printf("A Páscoa cai no dia %d!\n",d);
+    return d;
 }
 
 int main(){
-    int ano;
+    int ano, resultado;
     
+    // Loop para continuar perguntando o ano a ser calculado
     while(1){
-        printf("Insira o ano: ");
-        scanf("%d", &ano);
-    if(ano<0) break;
-        calculaPascoa(ano);
-        
+        printf("Digite o ano: ");
+        resultado = scanf("%d", &ano);
+        if(resultado==1){ //Se o valor digitado for um número
+            printf("A Páscoa cai no dia %d!\n", calculaPascoa(ano));
+        }else{
+            printf("Ano inválido!\n");
+            break;
+        }
     }
-
     return 0;
 }
