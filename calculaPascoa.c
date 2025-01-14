@@ -12,7 +12,7 @@
 /*-----------------------------------------------------------------*/
 /**
    @brief Função responsável por fazer o cálculo do dia da Páscoa.
-   @param  int a ano para o qual se deseja saber o dia da Páscoa.
+   @param  int a Ano para o qual se deseja saber o dia da Páscoa.
    @return O dia calculado da Páscoa.
 */
 /*-----------------------------------------------------------------*/
