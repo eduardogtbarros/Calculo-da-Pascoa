@@ -45,6 +45,10 @@ function calculaPascoa(a){
 }
 
 var ano;
+
+/**
+ * Função responsável por ler as entradas do usuário.
+ */
 function lerEntradas(){
     leitura.question('Digite o ano: ', (lido) => {
         if(!isNaN(lido)){ //Se o valor digitado for um número

@@ -1,5 +1,21 @@
-﻿using System;
+﻿/*-----------------------------------------------------------------*/
+/**
+  @file   calculaPascoa.c
+  @author Eduardo Barros
+  @brief  Implementa o cálculo do dia da Páscoa utilizando o algoritmo
+          de J. M. Oudin.
+ */
+/*-----------------------------------------------------------------*/
+
+using System;
+
 class Program{
+
+    /// <summary>
+    /// Função responsável por fazer o cálculo do dia da Páscoa.
+    /// </summary>
+    /// <param name="a">Ano para o qual se deseja saber o dia da Páscoa.</param>
+    /// <returns>O dia calculado da Páscoa.</returns>
     static int calculaPascoa(int a){
         int c, n, k, i, j, l, m, d;
         
