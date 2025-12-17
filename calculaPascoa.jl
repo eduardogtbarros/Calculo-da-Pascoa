@@ -1,3 +1,20 @@
+# ===================================================================
+# File name: calculaPascoa.jl
+# Author: Eduardo Barros
+# Brief: Implementa o cálculo do dia da Páscoa utilizando o 
+#        algoritmo de J. M. Oudin.
+# ===================================================================
+
+"""
+    calculaPascoa(a::Int) -> Int
+    Função responsável por fazer o cálculo do dia da Páscoa.
+
+    # Param
+    - a::Int: Ano para o qual se deseja saber o dia da Páscoa.
+    
+    # Return
+    - Int: O dia calculado da Páscoa.
+"""
 function calculaPascoa(a::Int)
     c = a ÷ 100
     n = a % 19
